@@ -104,7 +104,28 @@ CREATE TABLE groupsLectures(
 );
 go
 
+insert into teachers([name],surname,salary)
+values
+('Николай','Николаев',78000),
+('Екатерина','Андреева',55000),
+('Александра','Петровна',95000),
+('Сергей','Суханов',48000)
 
+select * from teachers
+
+update teachers set salary = 48000 where id=3
+
+select * from teachers
+
+update teachers set salary = 50000 where salary>78000
+
+select * from teachers
+
+delete from teachers where id=2
+select * from teachers
+
+delete from teachers where salary<30000
+select * from teachers
 
 
 
